@@ -321,13 +321,23 @@ export default function Portfolio() {
           </h2>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="bg-black text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-gray-800 transition shadow-lg">
-              Call to action
-            </button>
+           {/* Call Button - Direct Call */}
+<button
+  onClick={() => window.location.href = 'tel:+919399882934'}
+  className="bg-black text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-gray-800 transition shadow-lg"
+>
+  Call Now
+</button>
 
-            <button className="border-2 border-gray-800 text-gray-900 px-12 py-5 rounded-full text-xl font-bold hover:bg-gray-100 transition">
-              Book Our Demo
-            </button>
+{/* Email Button - Book Demo */}
+<button
+  onClick={() => {
+    window.location.href = 'mailto:adityajainghetal@gmail.com?subject=Book%20Demo%20Class%20Request&body=नमस्ते%20आदित्य%20सर,%0D%0A%0D%0Aमैं%20आपके%20कोर्स%20की%20Free%20Demo%20Class%20बुक%20करना%20चाहता/चाहती%20हूँ।%0D%0A%0D%0Aकृपया%20मुझे%20उपलब्ध%20Demo%20Slots%20बताएं%20या%20मेरा%20Demo%20Schedule%20कर%20दें।%0D%0A%0D%0Aनाम:%20%0D%0Aमोबाइल%20नंबर:%20%0D%0Aशहर:%20%0D%0A%0D%0Aधन्यवाद!%0D%0Aजल्दी%20रिप्लाई%20की%20प्रतीक्षा%20में...';
+  }}
+  className="border-2 border-gray-800 text-gray-900 px-12 py-5 rounded-full text-xl font-bold hover:bg-gray-100 transition ml-4"
+>
+  Book Our Demo
+</button>
           </div>
         </div>
       </div>

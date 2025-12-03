@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -34,10 +37,19 @@ export default function Home() {
             Professional web development, automation tools, and AI-powered solutions to take your business to the next level.
           </p>
           <div data-aos="fade-up" data-aos-delay="400">
-            <button className="relative group bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 px-12 rounded-full text-lg shadow-2xl transition-all transform hover:scale-105 hover:-translate-y-1">
+            {/* <button className="relative group bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 px-12 rounded-full text-lg shadow-2xl transition-all transform hover:scale-105 hover:-translate-y-1">
               <span className="relative z-10">Get Started Now</span>
               <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition"></div>
-            </button>
+            </button> */}
+
+            <button 
+  onClick={() => navigate("/about")}
+  className="relative group bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 px-12 rounded-full text-lg shadow-2xl transition-all transform hover:scale-105 hover:-translate-y-1"
+>
+  <span className="relative z-10 cursor-pointer">Get Started Now</span>
+  <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition"></div>
+</button>
+
           </div>
         </div>
       </section>

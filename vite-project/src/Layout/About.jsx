@@ -328,8 +328,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
+const navigate = useNavigate();
+
   return (
     <>
       {/* Hero Section */}
@@ -477,7 +480,7 @@ export default function About() {
               <p className="text-lg mb-8 opacity-90">
                 Let's discuss your project and create a website that truly represents your brand.
               </p>
-              <button className="bg-white text-indigo-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition">
+              <button onClick={() => navigate("/contact")} className="bg-white text-indigo-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition cursor-pointer">
                 Start Your Project
               </button>
             </div>
@@ -509,7 +512,7 @@ export default function About() {
               <p className="text-lg mb-8 opacity-90">
                 Let's discuss your idea and turn it into a successful mobile application.
               </p>
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition">
+              <button onClick={() => navigate("/contact")} className="bg-white text-indigo-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition cursor-pointer">
                 Start Your Project
               </button>
             </div>

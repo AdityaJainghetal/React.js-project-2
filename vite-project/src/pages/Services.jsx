@@ -16,12 +16,23 @@ export default function Services() {
           </p>
 
           <div className="mt-10 flex justify-center gap-6">
-            <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-800 transition">
-              Call to action
-            </button>
-            <button className="border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-full text-lg font-semibold hover:border-black transition">
-              Secondary
-            </button>
+     {/* Call Button */}
+<button
+  onClick={() => window.location.href = 'tel:+919399882934'}
+  className="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-800 transition"
+>
+  Call to action
+</button>
+
+{/* Email Button - ab aapka real email daal diya hai */}
+<button
+  onClick={() => {
+    window.location.href = 'mailto:adityajainghetal@gmail.com?subject=Course%20की%20जानकारी%20चाहिए&body=नमस्ते%20आदित्य%20सर,%0D%0A%0D%0Aमैं%20आपके%20कोर्स%20के%20बारे%20में%20जानकारी%20लेना%20चाहता/चाहती%20हूँ।%0D%0Aकृपया%20fees,%20duration,%20batch%20timing%20और%20अगला%20batch%20कब%20शुरू%20हो%20रहा%20है,%20ये%20सारी%20डिटेल्स%20भेज%20दें।%0D%0A%0D%0Aधन्यवाद!%0D%0A%0D%0Aनाम:%20%0D%0Aमोबाइल:%20';
+  }}
+  className="border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-full text-lg font-semibold hover:border-black transition ml-4"
+>
+  Send Email
+</button>
           </div>
         </div>
 

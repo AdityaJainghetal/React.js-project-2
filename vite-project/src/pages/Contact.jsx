@@ -175,12 +175,12 @@ Sent from Contact Form`;
                     type="submit"
                     className="relative group bg-gradient-to-r from-green-500 to-emerald-600 text-white px-20 py-6 rounded-full text-2xl font-black shadow-2xl transform hover:scale-110 transition-all duration-300 overflow-hidden"
                   >
-                    <span className="relative z-10 flex items-center justify-center gap-3">
+                    <span className="relative z-10 flex items-center justify-center gap-3 cursor-pointer">
                       Send Message
                     </span>
                     <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition"></div>
                   </button>
-                  <p className="mt-4 text-gray-600 font-medium">
+                  <p className="mt-4 text-gray-600 font-medium cursor-pointer">
                     Opens WhatsApp • Reply in <span className="text-green-600 font-bold">5 mins</span>
                   </p>
                 </div>

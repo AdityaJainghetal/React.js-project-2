@@ -71,31 +71,41 @@ export default function Footer() {
         {/* Column 4 - Quick Links */}
         <div>
           <h3 className="text-lg font-bold mb-5 text-gray-900">Quick Links</h3>
-          <ul className="space-y-4">
-            {["Home", "About Us", "Services", "Portfolio"].map((link) => (
-              <li key={link}>
-                <a href="#" className="text-gray-700 hover:text-blue-700 transition font-medium text-base">
-                  {link}
-                </a>
-              </li>
-            ))}
+         <ul className="space-y-4">
+  {/* Normal Menu Links - Real paths ke saath */}
+  {[
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Contact Us", path: "/contact" },
+  ].map((item) => (
+    <li key={item.name}>
+      <a
+        href={item.path}
+        className="text-gray-700 hover:text-blue-700 transition font-medium text-base block"
+      >
+        {item.name}
+      </a>
+    </li>
+  ))}
 
-            {/* Direct WhatsApp Link - Click/Tap = WhatsApp Open */}
-            <li>
-              <a
-                href="https://wa.me/919399882934?text=Hi%20JeetWeb%2C%20I%20am%20interested%20in%20your%20services%20"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-xl transition transform hover:scale-105 shadow-lg w-full justify-center md:w-auto"
-              >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099.198.05.372-.025.521-.075.149-.05.174-.099.223-.198.049-.099.124-.248.099-.397-.025-.149-.174-.869-.347-1.417-.173-.547-.372-1.18-.571-1.607-.198-.428-.595-.347-.819-.347-.223 0-.446.05-.67.149-.223.099-.595.347-.893 1.042-.297.695-.074 1.342.223 1.788.297.447 1.315 1.73 2.847 2.458 1.531.728 2.158.876 2.854.624.695-.252.893-.99 1.116-1.438.223-.447.372-.62.62-.62.248 0 .447.174.67.347.223.174.446.546.521.893.074.347.074.744-.099 1.017-.173.273-.62.422-1.017.422z"/>
-                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.5 19.25c-3.037 0-5.5-2.463-5.5-5.5s2.463-5.5 5.5-5.5 5.5 2.463 5.5 5.5-2.463 5.5-5.5 5.5z"/>
-                </svg>
-                Chat on WhatsApp
-              </a>
-            </li>
-          </ul>
+  {/* WhatsApp Direct Chat Button */}
+  <li className="pt-4">
+    <a
+      href="https://wa.me/919399882934?text=नमस्ते%20आदित्य%20सर%2C%20मैं%20आपके%20कोर्स%20के%20बारे%20में%20जानना%20चाहता/चाहती%20हूँ।%20Demo%20या%20fees%20की%20जानकारी%20चाहिए।"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-4 rounded-xl transition transform hover:scale-105 shadow-lg w-full justify-center"
+    >
+      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099.198.05.372-.025.521-.075.149-.05.174-.099.223-.198.049-.099.124-.248.099-.397-.025-.149-.174-.869-.347-1.417-.173-.547-.372-1.18-.571-1.607-.198-.428-.595-.347-.819-.347-.223 0-.446.05-.67.149-.223.099-.595.347-.893 1.042-.297.695-.074 1.342.223 1.788.297.447 1.315 1.73 2.847 2.458 1.531.728 2.158.876 2.854.624.695-.252.893-.99 1.116-1.438.223-.447.372-.62.62-.62.248 0 .447.174.67.347.223.174.446.546.521.893.074.347.074.744-.099 1.017-.173.273-.62.422-1.017.422z"/>
+        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.5 19.25c-3.037 0-5.5-2.463-5.5-5.5s2.463-5.5 5.5-5.5 5.5 2.463 5.5 5.5-2.463 5.5-5.5 5.5z"/>
+      </svg>
+      Chat on WhatsApp
+    </a>
+  </li>
+</ul>
         </div>
 
       </div>
