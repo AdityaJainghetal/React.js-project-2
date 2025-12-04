@@ -71,12 +71,21 @@ const navigate = useNavigate();
             <h2 className="text-5xl font-black text-gray-900 mb-8">
               About Me
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed mb-6">
-              Founder of <strong>JEETWEB</strong> — with <span className="font-bold text-blue-600">5+ years</span> of experience in full-stack development, AI integration, and digital growth strategies.
-            </p>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              I help businesses launch high-converting websites, automate workflows, and deploy smart AI tools that save time and multiply revenue.
-            </p>
+           <p className="text-xl text-gray-600 leading-relaxed mb-6">
+  Founder of <strong>JEETWEB</strong> — with <span className="font-bold text-blue-600">5+ years</span> of experience in full-stack development, AI integration, and digital growth strategies.
+</p>
+
+
+<p className="text-xl text-gray-600 leading-relaxed mb-6">
+  <strong className="text-gray-800">Aditya Jain</strong>, the Co-Founder and Website Developer of Jeetweb, specializes in creating high-performance, modern, and fully optimized websites that help businesses scale faster and build a powerful online presence.
+</p>
+<p className="text-xl text-gray-600 leading-relaxed mb-6">
+  <strong className="text-gray-800">Brajeet Kumar Yadav</strong> is a visionary entrepreneur and Founder of Jeetweb, dedicated to building smart digital and AI-driven solutions for businesses. He helps startups and brands grow faster with modern websites, automation, and intelligent technology.
+</p>
+
+<p className="text-xl text-gray-600 leading-relaxed">
+  Together, we help businesses launch high-converting websites, automate workflows, and deploy smart AI tools that save time and multiply revenue.
+</p>
             <div className="mt-10 flex gap-6">
               <div className="text-center">
                 <h4 className="text-4xl font-black text-blue-600">50+</h4>
