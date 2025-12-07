@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './Layout/Layout';
-import Home from './Layout/Home';
-import About from './Layout/About';
-import Services from './pages/Services';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import Home from "./Layout/Home";
+import About from "./Layout/About";
+import Services from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="portfolio" element={<Portfolio />} />
