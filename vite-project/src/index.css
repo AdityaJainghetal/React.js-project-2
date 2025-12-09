@@ -1,1 +1,112 @@
 @import "tailwindcss";
+
+.support-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7ff 0%, #e6f0ff 100%);
+  border-radius: 20px;
+  max-width: 1500px;
+  margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.robot-section {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.zigzag-robot {
+  width: 280px;
+  height: auto;
+  animation: zigzag 3s infinite ease-in-out; /* Faster zig-zag for fun */
+  filter: drop-shadow(0 5px 15px rgba(0, 102, 255, 0.3)); /* Blue glow for futuristic feel */
+}
+
+@keyframes zigzag {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg) skew(0deg); 
+  }
+  20% { 
+    transform: translateY(-10px) rotate(3deg) skew(2deg); 
+  }
+  40% { 
+    transform: translateX(5px) translateY(-5px) rotate(-2deg) skew(-1deg); 
+  }
+  60% { 
+    transform: translateX(-5px) translateY(10px) rotate(4deg) skew(1deg); 
+  }
+  80% { 
+    transform: translateY(-15px) rotate(-3deg) skew(-2deg); 
+  }
+}
+
+.content-section {
+  flex: 1.5;
+  min-width: 300px;
+}
+
+.rating h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.stars {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.rating p {
+  color: #666;
+  font-size: 16px;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.call, .email {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  font-family: Arial, sans-serif;
+}
+
+.phone-icon, .mail-icon {
+  font-size: 36px;
+}
+
+.call h3 {
+  margin: 0;
+  font-size: 28px;
+  color: #0066ff;
+}
+
+.call p, .email p {
+  margin: 0;
+  color: #444;
+  font-weight: bold;
+}
+
+.email a {
+  color: #0066ff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .support-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .zigzag-robot {
+    width: 220px;
+  }
+}
